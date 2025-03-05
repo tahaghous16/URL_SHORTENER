@@ -8,6 +8,9 @@ const PORT = 3000;
 //Middleware
 app.use(express.urlencoded({ extended: true }));
 
+//EJS
+app.set("view engine", "ejs");
+
 //Express Router
 app.use(shortenerUrlRoutes);
 
